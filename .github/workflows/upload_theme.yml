@@ -1,7 +1,7 @@
 name: upload_theme_to_AWS
 env:
   AWS_APLICATION_NAME : "prestashop"
-  DEPLOY_PACKAGE_NAME : "shop-theme-{{ github.sha }}.zip"
+  DEPLOY_PACKAGE_NAME : "shop-theme-${{ github.sha }}.zip"
 
 on:
   push:
