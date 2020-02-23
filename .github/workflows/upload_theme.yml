@@ -16,4 +16,7 @@ jobs:
     steps:
     - name: Git clone theme 
       uses: actions/checkout@v1
+    
+    - name: Create ZIP package for deploy
+      run: zip -r ${{ DEPLOY_PACKAGE_NAME }} ./ -x *.git*
      
