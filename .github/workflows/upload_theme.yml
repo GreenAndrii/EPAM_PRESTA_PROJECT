@@ -1,7 +1,7 @@
 name: upload_theme_to_AWS
 env:
   AWS_APLICATION_NAME : "prestashop"
-  DEPLOY_PACKAGE_NAME : "shop-theme-{{ github.sha }}"
+  DEPLOY_PACKAGE_NAME : "shop-theme-{{ github.sha }}.zip"
 
 on:
   push:
@@ -18,5 +18,5 @@ jobs:
       uses: actions/checkout@v1
     
     - name: Create ZIP package for deploy
-      run: zip -r ${{ DEPLOY_PACKAGE_NAME }} ./ -x *.git*
+      run: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
      
