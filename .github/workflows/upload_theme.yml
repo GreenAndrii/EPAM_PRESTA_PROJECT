@@ -1,0 +1,19 @@
+name: upload_theme_to_AWS
+env:
+  AWS_APLICATION_NAME : "prestashop"
+  DEPLOY_PACKAGE_NAME : "shop-theme-{{ github.sha }}"
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  create-instance:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Git clone theme 
+      uses: actions/checkout@v2
+     
