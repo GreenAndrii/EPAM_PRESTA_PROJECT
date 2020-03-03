@@ -125,8 +125,8 @@ global_settings:
 theme_settings:
   default_layout: layout-full-width
   layouts:
-    category: layout-left-column
-    best-sales: layout-left-column
+    category: layout-full-width
+    best-sales: layout-full-width
     new-products: layout-left-column
     prices-drop: layout-left-column
     contact: layout-left-column
