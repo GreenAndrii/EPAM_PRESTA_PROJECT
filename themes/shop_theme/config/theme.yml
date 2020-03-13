@@ -10,7 +10,7 @@ author:
 meta:
   compatibility:
       from: 1.7.0.0
-      to: ~
+      to: 1.7.6.3
 
   available_layouts:
     layout-full-width:
