@@ -20,7 +20,7 @@ services:
             DB_SERVER: db
             DB_PASSWD: $DB_PASSWD
             PS_INSTALL_AUTO: 1
-            PS_DOMAIN: $DOCKER_DNS
+            PS_DOMAIN: epamdevopsd.ddns.net
             PS_ERASE_DB: 1
 volumes:
     db_data: {}
